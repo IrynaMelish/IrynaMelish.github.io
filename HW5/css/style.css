@@ -151,6 +151,7 @@ body {
     padding-left: 20px;
     outline: none;
     border: none;
+    color:white;
 }
 
 .text1 input {
@@ -186,3 +187,5 @@ body {
 .text input {
     margin-bottom: 20px;
 }
+
+ 
