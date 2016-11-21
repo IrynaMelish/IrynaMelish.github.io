@@ -50,24 +50,22 @@ body {
 
   
 .menu .menu3 a{
-	color:white;
+    color:white;
 }
 /*.menu .menu3 a:before{
-
-	content:"";
-	border-left: 1px solid #60b5ed;
-
+    content:"";
+    border-left: 1px solid #60b5ed;
 }*/
 
 .menu img{
-	height: 20px;
-	padding-left:20px;
+    height: 20px;
+    padding-left:20px;
 }
 .menu li:nth-child(5){
-	
-	border-right: 1px solid #60b5ed;/*не можу зменшити висоту, застосовувала line-height*/
+    
+    border-right: 1px solid #60b5ed;/*не можу зменшити висоту, застосовувала line-height*/
 
-	
+    
 }
 
 .menu1 a:hover {
@@ -187,5 +185,3 @@ body {
 .text input {
     margin-bottom: 20px;
 }
-
- 
