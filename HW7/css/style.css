@@ -1,0 +1,1111 @@
+@font-face {
+font-family: 'League Gothic';
+src: url('../fonts/League_Gothic-webfont.eot');                                                                        // IE9 в режиме совместимости с IE8
+src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),    // IE8 --
+url('../fonts/League_Gothic-webfont.woof') format('woff'),
+url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
+url('../fonts/League_Gothic-webfont.svg') format('svg');                                                    // не забыть точку с запятой!!!
+}
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype");
+   	src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+ 	url("../fonts/OpenSans-Light.ttf") format("truetype");  
+	font-weight: normal;
+    font-style: normal;
+
+
+}
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url("../fonts/opensans-extrabold-webfont.eot");
+    src: url("../fonts/opensans-extrabold-webfont.eot?#iefix")format("embedded-opentype");
+   	src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+ 	url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");  
+	font-weight: bold;
+    font-style: normal;
+
+
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "League Gothic", Arial, sans-serif;
+}
+
+/*HEADER------------------------------------*/
+header{
+	background-image: url(../images/header.jpg);
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center;
+    background-attachment: fixed;
+}
+.top-part_logo{
+	
+	position: relative;
+	overflow: hidden;
+	letter-spacing: -0.04rem;
+}
+
+.top-part_logo__item{
+	color: #fff; 
+	text-shadow: 0 2px 2px rgba(0,0,0,.3); 
+	font-size: 3rem;
+}
+.top-part{
+	padding-top:4rem;
+}
+
+.top-part_logo__item span{
+	color: #533a5e;
+	font-size: 3rem;
+}
+.main-nav{
+	float: right;
+}
+.main-nav__other_li,
+.main-nav__first_li{
+	display: inline-block;
+    box-sizing: border-box;
+    padding-top: 0.4rem;
+    margin-left: 2.95rem;
+ }
+
+.main-nav__visible_link,
+.main-nav__hidden_link{
+	text-decoration: none;
+	color: #fff; 
+	font-family: "League Gothic";
+	text-shadow: 1px 2px 2px rgba(0,0,0,.4); 
+	display: block;
+	text-align: center;
+ 	line-height: 2.2rem;
+	font-size: 1.5rem;
+}
+
+.main-nav__visible_link:hover,
+.main-nav__other_li:hover{
+	color: #fff;
+    border-bottom: 2px solid #edbfff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+ }
+   
+/*SLIDER--------------------------------*/
+.slider{
+	margin-top:215px;
+	background-color: rgba(0, 0, 0, 0.20);
+	height: 400px;
+}
+
+.slider-text{
+	height: 400px;
+	width: 32rem;
+	padding-top: 5.1rem;
+    letter-spacing: -0.06rem;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	/*box-sizing: border-box;*/
+}
+.slider-text p{
+	font-size: 1.125rem;
+    line-height: 1.6rem;
+	text-shadow: 0 2px 2px rgba(0,0,0,.3); /* drop shadow */
+	color: #fefefe; /* text color */
+	font-family: "OpenSansLight";
+}
+.slider-text p:first-child{
+	font-size: 3.75rem;
+    line-height: 3.5rem;
+	font-family: "League Gothic", Arial, sans-serif;
+}
+.slider-text h1{
+	line-height: 2.2rem;
+	color:#edbfff;
+	text-shadow: 0 2px 2px rgba(0,0,0,.3);
+}
+.slider-image{     
+    width: 35%;
+    margin-top: -2%;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+.slider-image__action{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 76px;
+      height: 76px;
+      background-image: url(../images/slider_play-icon.png);
+      cursor: pointer;
+}
+ .slider-image__mobile{
+ 	  position: absolute;
+      /*top: 50%;
+      left: 50%;*/
+      width: 265px;
+      height: 370px;
+      background-image: url(../images/slider-image__mobile.png);
+      background-size: cover;
+ }  
+ .info-radio{
+ 	padding-left: 195px;
+ }
+ .header-radio{
+ 	margin-top: 5.6rem;
+    float: right;
+    margin-right: 10.3rem;
+}
+ input[type="radio"]{
+ 	color: black;
+ 	opacity: 30%;
+ 	width: 15px;
+ 	height: 19px;
+ 	margin-right: 3px;
+ }
+
+/*ABOUT THE COMPANY------------------------------*/
+.about{
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMxMjUzOSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzc0NTA4MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+background-image: -moz-linear-gradient(bottom, #312539 0%, #745083 100%); /* gradient overlay */
+background-image: -o-linear-gradient(bottom, #312539 0%, #745083 100%); /* gradient overlay */
+background-image: -webkit-linear-gradient(bottom, #312539 0%, #745083 100%); /* gradient overlay */
+background-image: linear-gradient(bottom, #312539 0%, #745083 100%); /* gradient overlay */
+height: 340px;
+border-top:1px solid #332539;
+border-bottom: 1px solid #332539;
+}
+
+.about_key,
+.about_says,
+.about_music{
+	float: left;
+	width:30%;
+	position: relative;
+	overflow: hidden;
+	margin-top:5rem;
+	height: 200px
+}
+.about_says,
+.about_music{
+	padding-left: 5%;
+}
+.about_key_sprite,
+.about_says_sprite,
+.about_music_sprite{
+	background-image: url(../images/sprite.png);
+	background-position: 0 0;
+    background-repeat: no-repeat;
+	width: 2rem;
+    height: 35px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: 1.3rem;
+    margin-bottom: 13rem;
+    margin-left: 0.8rem;
+}
+
+ .about__company{
+	color: #fff; /* text color */
+	font-family: "League Gothic";
+	font-size: 1.875rem;
+    text-shadow: 0 1px 0 #0e1418;
+    line-height: 1.48rem;
+    padding-bottom: 0.6rem;
+}
+
+.about .about__text{
+    color: #fff;
+    font-family: "OpenSansLight";
+    font-size: 1rem;
+    text-shadow: 0 1px 0 #0e1418;
+    line-height: 1.55rem;
+    letter-spacing: -0.02rem;
+}
+.about__link{
+	float: right;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-shadow: 0 1px 0 #0e1418;
+    color: #fff;
+    padding-top: 1.3rem;
+    padding-right: 1rem;
+}
+
+.about__link:hover{
+text-shadow: 0 0 8px rgba(255,255,255,.8); 
+}
+
+/*INFORMATION----------------------------------------*/
+.info{
+	background-color: #f9f9f9;
+	height: 486px;
+	border-bottom:1px solid #e6e6e6;
+}
+.info-starts{
+	float:left;
+	position: relative;
+	overflow: hidden;
+	
+}
+.info-starts-image{
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	margin-top:7.3rem;
+}
+.info-starts-item{
+	float: right;
+    width: 350px;
+    height: 260px;
+    background-image: url(../images/info-background.png);
+    background-size: cover;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    margin-top: 6rem;
+    margin-left: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: 2.3rem;
+    padding-right: 2.5rem;
+
+}
+.info-starts-item-title,
+.info-updates-title{
+	color: #454545;
+    font-size: 1.875rem;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.6rem;
+    letter-spacing: -0.04rem;
+    padding-bottom: 0.6rem;
+}
+.info-starts-item-title1
+ {
+	color: #edbfff;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 1.875rem;
+}
+.info-starts-item-title,
+.info-starts-item-title1{
+	display: inline;
+}
+
+.info-starts-item-text,
+.info-updates-list-title,
+.info-updates-list-text{
+color: #454545; /* text color */
+font-family: "OpenSansLight";
+font-size: 1rem;
+text-shadow: 0 1px 0 #fff;
+line-height: 1.55rem;
+}
+.info-updates-list-item{
+	padding-bottom: 1.1rem;
+}
+
+.info-updates{
+	float: right;
+    position: relative;
+    margin-top: 6rem;
+    padding-top: 2.3rem;
+    width: 46.8%;
+}
+
+.info-updates-list-title{
+	font-family:"OpenSansExtraBold";
+}
+.info-updates-list{
+	list-style: none;
+	line-height: 1.5rem;
+	padding-top: 0.4rem;
+}
+
+ .info-blog-list-img{
+ 		float: left;
+        margin-right: 1.1rem;}
+ .info-updates-updates__link{
+ 	padding-top: 0.3rem;
+    padding-right: 1.1rem;
+}
+.info-updates-updates__link_visible{
+	display: none;
+}
+
+/*LOGOS----------------------------------------*/
+.logos{
+	background-color: #f9f9f9;
+	height:119px;
+	border-bottom:1px solid #e6e6e6;
+	border-top:1px solid white;
+}
+.logos__item{
+	width: auto;
+	padding-left: 6rem;
+	padding-top: 1.5rem;
+
+
+}
+.logos__item__logo{
+   width: 16%;
+    float: left;
+}
+
+.logos__item__logo__link {
+    width: 69px;
+    height: 64px;
+    display: block;
+}
+.info-updates-updates__link{
+	color: #454545; /* text color */
+	font-family: "League Gothic";
+	font-size: 1.125rem;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+	float:right;
+	text-decoration: none;
+}
+ 
+.info-radio{
+padding-left: 195px;
+/*COLUMN----------------------------------------------*/
+}
+.column{
+	background-color: #ececec;
+	height: 397px; 
+}
+.column_item{
+	float: left;
+	width:29%;
+	position: relative;
+	overflow: hidden;
+	/*box-sizing: border-box;*/
+	padding: 5.8rem 0;
+	padding-left:6.2%
+}
+.column_item_title_visible{
+	display: none;
+}
+.column_item:first-child{
+	padding-left: 0px;
+} 
+.column_item_title,
+.column_item_title_2{
+	color: #454444;
+    font-family: "League Gothic";
+    font-size: 1.875rem;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 2.5rem;
+    letter-spacing: -0.06rem;
+}
+
+.column_logo__item_text{
+	color: #454545; /* text color */
+font-family: "League Gothic";
+font-size: 3rem;
+text-shadow: 0 1px 0 #fff; /* drop shadow */
+
+}
+.column_logo__item__er{
+	color:#b9b9b9;
+}
+.column_item_text{
+	color: #787878; /* text color */
+font-family: "OpenSansLight";
+font-size: 1rem;
+text-shadow: 0 1px 0 #fff; /* drop shadow */
+line-height: 1.55rem
+}
+.column_item_copyright{
+color: #c5c5c5; /* text color */
+font-family: "Georgia";
+font-size: 1rem;
+font-style: italic;
+text-shadow: 0 1px 0 #fff; /* drop shadow */
+line-height: 2rem;
+}
+/*FOOTER-------------------------------------*/
+footer{
+	background-image: url(../images/footer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 113px;
+}
+
+.footer-main-nav{
+	float: left;
+	padding-top: 1.2rem;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.main-nav__item{
+	display: inline-block;
+    box-sizing: border-box;
+    list-style: none;
+    padding-right: 2.45rem;
+}
+.main-nav__link{
+	text-decoration: none;
+	color: #fff; 
+	font-family: "League Gothic";
+	text-shadow: 1px 2px 2px rgba(0,0,0,.4); 
+	display: block;
+	font-size: 1.25rem;
+	line-height: 33.72px;
+}
+
+.footer-copyright{
+	float:right;
+	color: #fff; /* text color */
+	font-family: "OpenSansLight";
+	font-size: 0.75rem;
+    text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+    padding-top: 1.8rem;
+}
+.wrapper .footer-copyright__author{
+	font-family:"OpenSansExtraBold";
+}
+/*MIN WIDTH 960px------------------------------------*/
+@media screen and (min-width: 960px) { 
+	.wrapper{
+	width: 100%;
+
+	margin:  0 auto;
+	height: 100%;
+	max-width: 960px;
+}
+/*HEADER  960*/
+header{
+	height: 845px;
+}
+.top-part_logo{
+	overflow: hidden;
+	float: left;
+}
+
+.main-nav__hidden_link,
+.main-nav__visible_link
+{
+ font-size: 1.5rem;
+ line-height: 2.2rem;
+}
+/*ABOUT 960*/
+.about_block{
+	width: 100%;
+}
+.about_says_sprite{
+	background-position: -35px 0;
+}
+.about_music_sprite{
+	background-position: -70px 0;
+}
+.about_key,
+.about_says,
+.about_music{
+	float: left;
+	width:30%;
+	position: relative;
+	overflow: hidden;
+	margin-top:5rem;
+	height: 200px
+}
+.about_says,
+.about_music{
+	padding-left: 5%;
+}
+}
+
+/*MAX-WIDTH 959px MIN-WIDTH 768px*/
+@media screen and (max-width: 959px) and (min-width: 768px){
+.wrapper {
+    width: 100%;
+    margin:  0 auto;
+	height: 100%;
+    max-width: 768px;
+}
+/*HEADER 768*/
+header{
+	height: 800px;
+}
+.main-nav{
+	float: left;
+	margin-top: 0.7rem;
+}
+.main-nav__first_li{
+	margin-left:0px;
+}
+.main-nav__other_li{
+	margin-left: 3.95rem;
+}
+.slider{
+	   margin-top: 7.7rem;
+ }
+ .slider-text p{
+ 	font-size: 1rem;
+ }
+ .slider-text p:first-child{
+	font-size: 3rem;
+}
+.slider-text h1{
+	font-size: 1.5rem;
+}	
+.slider-text{
+	padding-left: 1.5rem;
+    padding-top: 6rem;
+    width: 20rem;
+    height: 185px;
+    letter-spacing: -0.03rem;
+}	
+.slider-image{
+	padding-right: 4.4rem;
+}
+.header-radio {
+    margin-top: 2.3rem;
+    float: right;
+    margin-right: 10.3rem;
+}
+/*ABOUT 768*/
+.about__company{
+	font-size: 1.5rem;
+
+}
+.about_key, .about_says, .about_music{
+	    margin-top: 4.8rem;
+}
+
+.about_key_sprite,
+.about_says_sprite,
+.about_music_sprite{
+	 margin-right: 0rem;
+     margin-left: 0rem;
+}
+.about_says_sprite,
+.about_music_sprite
+{
+	background-position: 0px;
+}
+
+.about__link{
+	padding-top: 0;
+    padding-right: 2rem;
+}
+/*INFO 760*/
+.info-starts-item {
+  
+    width: 20rem;
+    height: 265px;
+    box-sizing: border-box;
+    padding-left: 2.3rem;
+    padding-top: 2rem;
+}
+.info-updates{
+    width: 48.6%;
+    padding-top: 2.2rem;
+}
+.info-starts-item-title{
+	font-size: 1.5rem;
+	 white-space:break-word;
+}
+
+.info-starts-item-title,
+.info-starts-item-title1{
+	display: block;
+	font-size: 1.5rem;
+}
+.info-starts-item-text{
+
+	height: 9rem;
+	overflow: hidden;
+    
+}
+.info-updates-list-text{
+	height: 1.8rem;
+	overflow: hidden;
+}
+.info-updates-list-item {
+    padding-bottom: 0.9rem;
+}
+.info-updates-updates__link{
+	display:none;
+}
+.info-updates-updates__link_visible	{
+	display: block;
+ 	padding-top: 0.3rem;
+   padding-right: 3rem;
+    color: #454545; /* text color */
+	font-family: "League Gothic";
+	font-size: 1.125rem;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+	float:right;
+	text-decoration: none;
+}
+/*LOGOS 768px*/
+.logos__item{
+	padding-left: 0px;
+}
+/*COLUMNS 768px*/
+.column_item{
+	padding-bottom: 0px;
+    height: 200px;
+}
+.column_item_logo,
+.column_item_copyright,
+.column_item_title_2{
+	display: none;
+}
+.column_item_title,
+.column_item_title_visible{
+	color: #454444;
+    font-family: "League Gothic";
+    font-size: 1.5rem;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 2.5rem;
+    letter-spacing: -0.06rem;
+    display:block;
+}
+/*FOOTER 768*/
+footer{
+	height: 200px;
+}
+.footer-main-nav{
+	padding-top: 2.4rem;
+}
+footer .main-nav__item{
+	padding-right: 3.25rem;
+}
+.footer-copyright{
+	padding-right: 2.6rem;
+	padding-top: 1.7rem;
+}
+}
+/*MAX-WIDTH 767px MIN-WIDTH 480px*/
+@media screen and (max-width: 767px) and (min-width: 480px) {
+	.wrapper{
+  width: 100%;
+
+  margin:  0 auto;
+  height: 100%;
+  
+  max-width: 480px;
+  
+}
+/*HEADER 480px*/
+header{
+	height: 550px;
+}
+.top-part_logo {
+    
+    text-align: center;
+}
+
+.main-nav{
+	display: block;
+    visibility: hidden;
+    width: 245px;
+    height: 260px;
+    position: absolute;
+    z-index: 100;
+    top: 134px;
+    left: 25%;
+    opacity: .9; /* layer alpha */
+	border: 1px solid #041016; /* stroke */
+	border-radius: 10px;
+	background-color: #35293d; /* color overlay */
+	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.16); /* drop shadow */
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.16); /* drop shadow */
+	box-shadow: 0 3px 5px rgba(0,0,0,.16); /* drop shadow */
+}
+
+.main-nav:hover {
+  visibility: visible;
+}
+.main-nav__first_li{
+   visibility: visible;
+   width: 100%;
+   margin: 0;  
+}
+
+.main-nav__other_li{
+	width: 100%;
+    margin: 0;
+    border-top: 1px solid #523f5a;
+    border-bottom: 1px solid #3c2f44;
+}
+.main-nav__other_li:hover,
+.main-nav__first_li:hover{
+	background-color: #35293d;
+	opacity: 30%;
+	color: white;
+
+}
+.slider{
+	margin-top: 82px;
+	height: 244px;
+	z-index: 1;
+}
+.slider-text p:first-child{
+	font-size: 2.25rem;
+	line-height: 1.5rem;
+}
+.slider-text h1{
+	font-size: 1.125rem;
+}
+.slider-text{
+	width: 45%;
+	height: 60px;
+	padding-left: 8%;
+    padding-top: 100px;
+}
+.slider-image__mobile{
+	height: 275px;
+width: 180px;
+}
+.header-radio {
+    margin-top: 1.5rem;
+    float: right;
+    margin-right: 12rem;
+}
+.slider-image{
+	padding-right: 9%;
+}
+/*ABOUT 480px*/
+.about{
+	height: 597px;
+}
+.about_key, .about_says, .about_music{
+	width: 100%;
+	height: 155px;
+}
+.about__company{
+	font-size:1.5rem;
+	line-height: 1.5rem;
+}
+.about_says,
+.about_music{
+	padding: 0;
+	margin: 0;
+}
+.about_block{
+	padding-left: 4%;
+	padding-right: 3%;
+}
+/*INFO 480*/
+.info{
+	height:784px;
+}
+	.info-starts-item{
+	padding-top: 0;
+	padding-left: 15%;
+}
+.info-starts-image{
+	margin-top: 5.3rem;
+    margin-left: 4%;
+
+}
+.info-updates {
+    float: left;
+    position: relative;
+    margin-top: 0;
+    padding-top: 3.4rem;
+    width: 100%;
+    padding-left: 18%;
+}
+.info-updates-updates__link{
+	display: none;
+}
+.info-updates-updates__link_visible{
+	display: block;
+	padding-top: 0.3rem;
+   padding-right: 30%;
+    color: #454545; /* text color */
+	font-family: "League Gothic";
+	font-size: 1.125rem;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+	float:right;
+	text-decoration: none;
+}
+/*LOGOS 480*/
+.logos{
+	height: 236px;
+}
+.logos__item{
+	padding-left: 16%;
+	padding-right: 16%;
+	width: auto;
+	
+}
+.logos__item__logo__link{
+	margin: 0;
+}
+
+.logos__item__logo {
+    width: 33%;
+    padding-top: 2.1rem;
+}
+/*COLUMN 480*/
+.column{
+	height: 665px;
+
+}
+.column_item_logo,
+.column_item_copyright,
+.column_item_title_2{
+	display: none;
+}
+.column_item_title,
+.column_item_title_visible{
+	color: #454444;
+    font-family: "League Gothic";
+    font-size: 1.5rem;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 2.5rem;
+    letter-spacing: -0.06rem;
+    display:block;
+}
+.column_item{
+padding:0;
+width: auto;
+
+margin-left: 4%;
+margin-right: 4%;
+}
+.column_item{
+	padding-top:67px;
+
+}
+/*FOOTER 480*/
+footer{
+	height: 200px;
+}
+.footer-main-nav{
+	width: 90%;
+    padding-top: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.main-nav__item{
+	padding: 1.9%;
+}
+.footer-copyright{
+    padding-top: 1.1rem;
+    padding-right: 35%;
+}
+}
+/*MAX WIDTH 479px MIN WIDTH 320px*/
+@media screen and (max-width: 479px) and (min-width: 320px) {
+.wrapper{
+	width: 100%;
+
+  	margin:  0 auto;
+  	height: 100%;
+  
+ 	 max-width: 320px;
+  
+}
+/*HEADER 320*/
+header{
+height:515px;
+}
+.top-part_logo {
+    text-align: center;
+}
+.main-nav{
+	display: block;
+    visibility: hidden;
+    width: 245px;
+    height: 260px;
+    position: absolute;
+    z-index: 100;
+    top: 134px;
+    left: 12%;
+    opacity: .9; /* layer alpha */
+	border: 1px solid #041016; /* stroke */
+	border-radius: 10px;
+	background-color: #35293d; /* color overlay */
+	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.16); /* drop shadow */
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.16); /* drop shadow */
+	box-shadow: 0 3px 5px rgba(0,0,0,.16); /* drop shadow */
+}
+
+.main-nav:hover {
+  visibility: visible;
+}
+.main-nav__first_li{
+   visibility: visible;
+   width: 100%;
+   margin: 0;  
+}
+
+.main-nav__other_li{
+	width: 100%;
+    margin: 0;
+    border-top: 1px solid #523f5a;
+    border-bottom: 1px solid #3c2f44;
+}
+.main-nav__other_li:hover,
+.main-nav__first_li:hover{
+	background-color: #35293d;
+	opacity: 30%;
+	color: white;
+
+}
+.slider-image,
+.slider-text p:nth-child(3),
+.column,
+.footer-main-nav{
+	display: none;
+}
+.slider{
+	
+	background-color: rgba(0, 0, 0, 0);
+	margin-top:185px;
+	height: auto;
+}
+.slider-text{
+	padding:0;
+	width:auto;
+	padding-left: 20%;
+	height: auto;
+}
+.slider-text p:first-child{
+	font-size: 2.25rem;
+	line-height: 1.5rem;
+}
+.slider-text h1{
+	font-size: 1.125rem;
+}
+.header-radio {
+    margin-top: 4rem;
+    margin-right: 35%;
+  }
+/*ABOUT 320*/  
+.about{
+	height: 595px;
+}
+.about_block{
+	margin-top: 4.5rem;
+}
+
+.about_key, .about_says, .about_music{
+	width: 100%;
+	height: 155px;
+	margin: 0;
+}
+ .about__company{
+  	font-size: 1.5rem;
+}
+.about__text{
+   	height: 70px;
+   	overflow: hidden;
+ }
+.about_key{
+  	padding-left: 5%;
+ }
+ /*INFO 320*/  
+.info{
+	height: 787px;
+}
+.info-starts-item{
+	float: right;
+    padding-top: 1.8rem;
+    padding-left: 11%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 80%;
+    margin-top: 70px;
+    margin-left: 14%;
+    height: 300px;
+
+}
+.info-starts-item-title,
+.info-starts-item-title1{
+	font-size: 1.5rem;
+	display: block;
+	padding-bottom: -0rem;
+}
+.info-starts-item-text{
+	height: 10rem;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+.info-starts-image{
+	margin-top: 5.3rem;
+    margin-left: 4%;
+
+}
+.info-updates {
+   float: left;
+    position: relative;
+    margin-top: 0;
+    padding-top: 3rem;
+    width: auto;
+    padding-left: 6%;
+}
+.info-updates-updates__link{
+	display: none;
+}
+.info-radio {
+    padding-left: 45%;
+}
+.info-updates-updates__link_visible{
+	display: block;
+	padding-top: 0.3rem;
+   padding-right: 30%;
+    color: #454545; /* text color */
+	font-family: "League Gothic";
+	font-size: 1.125rem;
+	text-shadow: 0 1px 0 #fff; /* drop shadow */
+	float:right;
+	text-decoration: none;
+}
+.info-updates-list-title{
+	width: 60%;
+	height: 1.5rem;
+	overflow: hidden;
+}
+.info-updates-list-text{
+height: 1.5rem;
+    overflow: hidden;
+}
+.info-updates-updates__link_visible{
+	padding-right: 8%;
+}
+/*LOGOS 320px*/
+.logos{
+	height: 422px;
+}
+.logos__item{
+	padding-top: 0;
+}
+.logos__item__logo{
+width: 50%;
+    padding-top: 3.5rem;
+    float: left;}
+/*FOOTER 320px*/    
+.footer-copyright{
+	padding-top: 2.5rem;
+    padding-right: 28%;
+}
+footer{
+	height: 200px;
+}
+}  
+
