@@ -35,6 +35,7 @@ body{
 }
 
 /*HEADER*/
+
 .phone{
 	font: 19px/28px Arial, sans-serif;
 	color: #5e696d;
@@ -47,7 +48,8 @@ body{
 	float: left;
     margin: 5px 0 4px 2px;
 }
-.logo{
+
+.login{
 	float: left;
 	background-color: #b1bbbf;
 	box-shadow: 2px 3px 3px rgba(150,150,150,.75);
@@ -64,37 +66,39 @@ body{
 
 
 
-.logo label:nth-child(2){
+
+
+.login label:nth-child(2){
 	margin-left:4px;
 }
 
-.logo img{
+.login img{
 	float:left;
 	width: 14px;
 	height: 18px;
 	padding: 4px 3px 3px 7px;
 
 }
-.logo .login-form{
+ .login-form{
 	float: left;
 	width: 273px;	
-	/*text-align: center;*/
+	
 	padding-top: 3px;
 	padding-left: 0px;
 	
    }
-  .logo .login-form:after{
+   /*.login-form:after{
     display: block;
     content: ' ';
     clear: both; 
    } 
-
- .logo input{
+*/
+  input{
  	width: 107px;
  	height: 14px;
  	color: #51676f;
     border: 1px solid #97a2a6;
-   /* margin: 0 4px 0 0;*/
+   
     padding-left: 4px;
     font-size: 12px;
 
@@ -110,8 +114,12 @@ body{
  	
 
  }
- .logo a{
+ .login [type="submit"] {
  	text-decoration: none;
+ 	width: 32px;
+ 	background-color: transparent;
+    border-color: transparent;
+    color: white;
 
  } 
  .registration{
@@ -135,6 +143,7 @@ body{
  	color: #bfbfbf;
  	text-decoration: underline;
  }
+ 
  .right-menu{
  	float:right;
  	width: 76px;
@@ -157,7 +166,15 @@ body{
  .right-menu a:last-child{
  	padding-right: 5px;
  }
+ .header-top:after{
+    display: block;
+    content: ' ';
+    clear: both; 
+}
+
+ 
  .image {
+
  	position: relative;
  }
  .image img{ 	
@@ -165,12 +182,15 @@ body{
  	z-index: 1;
  }
  .image a{
+
  	position:absolute;
  	z-index: 100;
- 	padding-top: 141px;
+ 	padding-top: 103px;
  	height: 70px;
 
  }
+
+
 
  /*NAVIGATION*/
  nav{

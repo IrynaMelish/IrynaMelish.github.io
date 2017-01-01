@@ -11,37 +11,42 @@
 	<div class="wrapper">
 		<!--Header-->
 		<header>
+			<div class="header-top">			
 			<div class="phone">
 				<img src="images/Phone.png" alt="Phone">
 				<span>(044)123-45-67</span>
 				<span>(044)567-89-10</span>
 			</div>
-			<div class="logo">
+								
+			<div class="login">
 				<img src="images/avtorization.png" alt="autorization">
-				<div class="login-form">
-					<form action=".asp" method="GET" >
-        		  	 	<label><input type="text" name="Логин" placeholder="логин" ></label>
-        				<label><input type="password" name="password" placeholder="пароль" required></label>
-        				<a href="#">вход</a>
+					<form  class="login-form" action="#" method="POST" >
+        		  	 	<input type="text" name="Логин" placeholder="логин">
+        				<input type="password" name="password" placeholder="пароль" required>
+        				<input  type="submit" value="вход">
+        				
         			</form>
-        		</div>
+        		
         		<div class="registration">
         			<span>|</span>
         			<a href="#">регистрация</a>
         			<a href="#">забыли пароль?</a>
-        		</div>	
+        		</div>
         	</div>
-			<div class="right-menu">
+        	<div class="right-menu">
 				<a href="#"><img src="images/home.png" alt="home"></a>
 				<a href="#"><img src="images/map.png" alt="map"></a>
 				<a href="#"><img src="images/mail.png" alt="mail"></a>
+			</div>
 			</div>
 			<div class="image">
 				<a href="#"><img src="images/home-image.png" alt="home-imagine"></a>
 				<img src="images/main-image.png" alt="main-image">
 				
 			</div>
-		</header>
+			
+		</header>	
+		
 		<!--Navigation-->
 		<nav>
 			<div class="main-menu clearfix">
@@ -202,28 +207,28 @@
 					<form action=".asp" method="post">
 					<p>ШИНЫ</p>
 					<div class="choice">
-        		   		<input type="checkbox" id="brend1">
+        		   		<input type="checkbox" name="brend1">
         		   		<label for="brend1">Бренд 1</label>
 					</div>
         		   	<div class="choice">
-        		   	   	<input type="checkbox" id="brend2">
+        		   	   	<input type="checkbox" name="brend2">
         		    	<label for="brend2">Бренд 2</label>
         		    </div>
         		    <div class="choice">	
-        		   		<input type="checkbox" id="brend3">
+        		   		<input type="checkbox" name="brend3">
         		   		<label for="brend3">Бренд 3</label>
 					</div>
         		   	<p class="discs">ДИСКИ</p>
         		   	<div class="choice">
-        		   		<input type="checkbox" id="brend4">
+        		   		<input type="checkbox" name="brend4">
         		   		<label for="brend1">Бренд 1</label>
 					</div>
 					<div class="choice">
-        		   		<input type="checkbox" id="brend5">
+        		   		<input type="checkbox"name="brend5">
         		   		<label for="brend2">Бренд 2</label>
         		   	</div>	
 					<div class="choice">
-        		   		<input type="checkbox" id="brend6">
+        		   		<input type="checkbox" name="brend6">
         		   		<label for="brend3">Бренд 3</label>
         		   	</div >
         		   	<label><input type="submit" value="ВЫБРАТЬ"></label>
