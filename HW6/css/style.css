@@ -93,7 +93,7 @@ body{
     clear: both; 
    } 
 */
-  input{
+  .login input{
  	width: 107px;
  	height: 14px;
  	color: #51676f;
