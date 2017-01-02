@@ -20,18 +20,20 @@
 								
 			<div class="login">
 				<img src="images/avtorization.png" alt="autorization">
-					<form  class="login-form" action="#" method="POST" >
-        		  	 	<input type="text" name="Логин" placeholder="логин">
-        				<input type="password" name="password" placeholder="пароль" required>
-        				<input  type="submit" value="вход">
-        				
-        			</form>
+				<div class= "login-form">
+						<form action="#" method="POST" >
+        		  	 		<input type="text" name="Логин" placeholder="логин">
+        					<input type="password" name="password" placeholder="пароль" required>
+        					<input  type="submit" value="вход">
+        				</form>
+        		</div>
         		
         		<div class="registration">
         			<span>|</span>
         			<a href="#">регистрация</a>
         			<a href="#">забыли пароль?</a>
         		</div>
+
         	</div>
         	<div class="right-menu">
 				<a href="#"><img src="images/home.png" alt="home"></a>
@@ -207,29 +209,29 @@
 					<form action=".asp" method="post">
 					<p>ШИНЫ</p>
 					<div class="choice">
-        		   		<input type="checkbox" name="brend1">
-        		   		<label for="brend1">Бренд 1</label>
+        		   		<input type="checkbox" name="brend" id="brend1">
+        		   		<label for = "brend1"> Бренд 1 </label>
 					</div>
         		   	<div class="choice">
-        		   	   	<input type="checkbox" name="brend2">
+        		   	   	<input type="checkbox" name="brend" id="brend2">
         		    	<label for="brend2">Бренд 2</label>
         		    </div>
         		    <div class="choice">	
-        		   		<input type="checkbox" name="brend3">
-        		   		<label for="brend3">Бренд 3</label>
+        		   		<input type="checkbox" name="brend" id="brend3">
+        		   		<label for="brend3" >Бренд 3</label>
 					</div>
         		   	<p class="discs">ДИСКИ</p>
         		   	<div class="choice">
-        		   		<input type="checkbox" name="brend4">
-        		   		<label for="brend1">Бренд 1</label>
+        		   		<input type="checkbox" name="brend" id="brend4">
+        		   		<label for="brend4">Бренд 1</label>
 					</div>
 					<div class="choice">
-        		   		<input type="checkbox"name="brend5">
-        		   		<label for="brend2">Бренд 2</label>
+        		   		<input type="checkbox" name="brend" id="brend5">
+        		   		<label for="brend5">Бренд 2</label>
         		   	</div>	
 					<div class="choice">
-        		   		<input type="checkbox" name="brend6">
-        		   		<label for="brend3">Бренд 3</label>
+        		   		<input type="checkbox" name="brend" id="brend6">
+        		   		<label for="brend6">Бренд 3</label>
         		   	</div >
         		   	<label><input type="submit" value="ВЫБРАТЬ"></label>
         		   	</form>
@@ -259,7 +261,7 @@
 				<li><a href="#">Статьи</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<p>Создание сайта&nbsp;<span>&copy</span>&nbsp;Global Vision</p>
+			<p>Создание сайта&nbsp;<span>&copy;</span>&nbsp;Global Vision</p>
 		</footer>
 	</div>
 </body>
