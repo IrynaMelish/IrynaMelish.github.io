@@ -4,6 +4,7 @@
   var tab = $('.tab');
 
   tab.click(function() { 
+     tabContainers.hide();
     tab.removeClass("active"); 
     $(this).toggleClass("active"); 
      var i = $(this).index(); 
