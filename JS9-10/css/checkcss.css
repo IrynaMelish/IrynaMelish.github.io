@@ -1,0 +1,79 @@
+/*.checkcss input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.checkcss label {
+    cursor: pointer;
+}
+.checkcss label:after {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/Checkbox.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+.checkcss input[type=checkbox]:checked + label:after {
+	background-position: 0 -17px;
+}
+.checkcss label:hover:after {
+	background-position: 0 -34px;
+}
+.checkcss input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+*/
+.checkbox {
+  vertical-align: middle;
+	width: 16px;
+	height: 16px;
+  margin: 0 3px 0 0;
+}
+.checkbox + label {
+  cursor: pointer;
+}
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 35px;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+
+  left: 0;
+   vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #C3C3C3;
+	border-radius: 3px;
+	background: #F5F5F5;
+	background: -webkit-linear-gradient(#FFF, #E6E6E6);
+	background:         linear-gradient(#FFF, #E6E6E6);
+	box-shadow: 0 1px 1px rgba(0,0,0,.05), inset -1px -1px #FFF, inset 1px -1px #FFF;
+	cursor: pointer;
+}
+  
+  
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+    opacity: 0;
+  transition: all .2s;
+  width: 12px;
+ height: 12px;
+	margin: 2px 0 0 2px;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, rgb(197,222,234) 0%,rgb(138,187,215) 31%,rgb(6,109,171) 100%);
+}
+.checkbox:checked + label:after {
+  opacity: 1;
+}
+

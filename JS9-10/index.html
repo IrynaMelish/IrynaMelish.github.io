@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic carousel - jCarousel Examples</title>
+
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+        <link rel="stylesheet" type="text/css" href="css/nice-select.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/checkcss.css">
+   
+
+    </head>
+    <body>
+
+      <div class="wrapper">
+        <h1>Die Stadt deiner Träume</h1>
+        <nav>
+          <ul class="content clearfix">
+            <li><a href="#">Nav 1</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li class="dropdown"><a href="#">Nav 3</a>
+            <ul class="sub-menu">
+                <li><a href="#">Nav 3.1</a></li>
+                <li><a href="#">Nav 3.2</a></li>
+                <li><a href="#">Nav 3.3</a></li>
+                <li class="dropdown"><a href="#">Nav 3.4</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.4.1</a></li>
+                        <li class="dropdown"><a href="#">Nav 3.4.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.2.1</a></li>
+                                <li><a href="#">Nav 3.4.2.2</a></li>
+                                <li><a href="#">Nav 3.4.2.3</a></li>
+                                <li><a href="#">Nav 3.4.2.4</a></li>
+                                <li><a href="#">Nav 3.4.2.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.4.3</a></li>
+                        <li><a href="#">Nav 3.4.4</a></li>
+                        <li><a href="#">Nav 3.4.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 3.5</a></li>
+              </ul>
+              </li>
+              <li><a href="#">Nav 4</a></li>
+              <li><a href="#">Nav 5</a></li>
+            </ul>
+</nav>
+
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/amsterdam.jpg" width="800" height="300" alt=""></li>
+                        <li><img src="img/berlin.jpg" width="800" height="300" alt=""></li>
+                        <li><img src="img/london.jpg" width="800" height="300" alt=""></li>
+                        <li><img src="img/newyork.jpg" width="800" height="300" alt=""></li>
+                        <li><img src="img/paris.jpg" width="800" height="300" alt=""></li>
+                        <li><img src="img/rome.jpg" width="800" height="300" alt=""></li>
+                    </ul>
+                </div>
+
+               
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
+            
+            <select>
+				<option data-display="--Eure lieblingsstadt--">--Eure lieblingsstadt--</option>
+                   <option value="1">Paris</option>
+
+  				  <option value="2">Amsterdam</option>
+  				 <option value="3">Berlin</option>
+  				 <option value="4" >London</option>
+                  <option value="5">New York</option>
+                  <option value="6" >Rome</option>
+             </select>   
+            <div class="checkjs">
+                <div>
+                  <input type="checkbox" name="city" id="paris" value="paris">
+                  <label for="paris">Paris</label>
+                </div>
+                <div>
+                   <input type="checkbox" name="city" id="london" value="london" checked>
+                   <label for="london">London</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="city" id="berlin" value="berlin" disabled>
+                   <label for="berlin">Berlin</label>
+                </div>
+              </div>
+              <div class="checkcss">
+                <div>
+                  <input type="checkbox"  name="city" class="checkbox" id="amsterdam" value="amsterdam">
+                  <label for="amsterdam">Amsterdam</label>
+                </div>
+                <div>
+                   <input type="checkbox" name="city" class="checkbox" id="newyork" value="newyork" checked>
+                   <label for="newyork">New York</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="city" class="checkbox" id="rome" value="rome" disabled>
+                   <label for="rome">Rome</label>
+                </div>
+              </div>
+                  
+  
+                  
+        </div>
+
+	<!--JS-->
+	<!--JQuery-->
+     <script type="text/javascript" src="js/jquery.js"></script>
+     <!--carousel-->
+     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+     <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+    
+     <!--select-->
+     <script type="text/javascript" src="js/main.js"></script>
+     <script type="text/javascript" src="js/jquery.select.js"></script>
+     <!--menu-->
+     <script type="text/javascript" src="js/jquery.nice-select.js"></script>
+   
+     <script type="text/javascript" src="js/menu.js"></script>
+
+    <!--formstyler-->
+    <script type="text/javascript" src="js/jquery.formstyler.main.js"></script>
+     <script type="text/javascript" src="js/jquery.formstyler.js"></script>
+     <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+
+   
+    
+    
+
+	
+
+        
+        
+        
+    </body>
+</html>
