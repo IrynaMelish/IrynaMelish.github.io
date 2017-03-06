@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My introduction(template)</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	 <script type="text/template" id="test">
+		<div class="wrapper">
+			<div>
+				<p class="name"><%= data.name %></p>
+				<p class="photo"><img src="<%= data.photo%>" alt="Моє фото"></p>
+				<p class="description"><%=data.description %>
+				</p>
+			</div>
+		
+			<div class ="block">
+				<p class="head">Хочу вивчати фронтенд для того, щоб:</p>
+				<ul> 
+					<% for (var i = 0; i < data.reason.length; i++) { %>
+	
+			<li><%= data.reason[i] %></li>
+			
+		
+	<% }; %>
+					
+				</ul>
+			</div>
+			
+			<div class ="block">
+				<p class="head"> Мій контактний телефон: </p>
+				<p class="phone"><%= data.phone %> </p>
+			</div>
+			<div>
+					<p class="head"> Мій профіль в Facebook: </p>
+					<p><a href="<%= data.facebook%>" target="_blank"><%= data.facebookText %></a></p>
+			</div>
+			
+			<div class ="block">
+				<p class="head"> Мій фідбек:</p>
+       			<p><%= data.feedBack %></p>
+       								
+			</div>
+		</div>
+	 </script>
+
+</body>
+</html>
