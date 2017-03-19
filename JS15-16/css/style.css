@@ -1,0 +1,59 @@
+body{
+    background-image: url(../img/suche.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.container{
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 100px;
+
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    margin:5px;
+    border:3px solid #fff;
+}
+img:hover{
+    border:3px solid #0a77d5;
+}
+ h2{
+    color:#0a77d5;
+
+}
+ .btnSearch {
+      margin:30px 0; 
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: .5em 2em;
+      outline: none;
+      border-width: 2px 0;
+      border-style: solid none;
+      border-radius: 0.5rem;
+      background: #d0e4f7; /* Old browsers */
+    background: -webkit-linear-gradient(#d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+    background: -o-linear-gradient(#d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+    background: linear-gradient(#d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+      
+    }
+     
+
+ input {
+    width: 300px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 2px solid #73b1e7;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+
+
+
+.content {
+   margin: 30px 30px 30px 180px;
+}
