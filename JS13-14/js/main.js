@@ -21,13 +21,14 @@ var test = [
 }
 ];
 
+//записую данні в localStorage, перетворюючи обєкт в JSON
 
 localStorage.setItem('infoObj', JSON.stringify(test));
-
+// Беру дані з localStorage і розпарсюю їх
 var wrap = localStorage.getItem('infoObj');
 
 test = JSON.parse(wrap);
-
+//описую шаблон, який ставить HTML фрагмент на сторінку з використанням зворотньої кавички
 const page = obj => `
    <h2 class="title">Тест</h2>
    <form id="test">
@@ -42,17 +43,17 @@ const page = obj => `
        <label><input id="button" type="submit" class="btn  btn-danger  center-block btn-lg"  value='Результат!'></label>
    </form>
 `;
-
+// ставимо шаблон на строніку
 var parent = document.getElementsByClassName('container')[0];
 parent.innerHTML = page(test);
 
 
 
-
+// ставимо колбек на клік мишкою по кнопці перевірити результат
 var btn = document.getElementById('button');
 btn.addEventListener("click", results);
 
-
+// функція, яка показує результат
 function results() {
   var answers = [false, false, true, true, false, false, false, true, false];
   var elems = document.getElementsByTagName("input");
@@ -66,6 +67,7 @@ function results() {
        alert('Нажаль, неправильно! Спробуй ще!');
   }
 }
+//функція, яка порівнює два масиви
   function arr(arr1, arr2, arrayLength) {
       for (var i = 0; i < arrayLength; i++) {
           if (arr1[i] !== arr2[i]) {
