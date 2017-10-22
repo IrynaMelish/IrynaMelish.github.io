@@ -1,0 +1,423 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+    
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+
+
+
+html, body
+	height: 100%
+h1
+	text-transform: uppercase
+	font-size: 52px
+h1, h2, h3	
+	line-height: 1.4
+	align-items: center
+h2
+	font-size: 24px
+	font-family: "roboto-ex", sans-serif
+	font-weight: 300
+h3
+	font-size: 22px
+	font-weight: bold
+	color: $black
+	text-align: center
+h4
+	font-size: 24px
+	font-weight: 300
+h5
+	font-size: 14px
+	font-weight: bold	
+	color: #666
+h6
+	font-family: "roboto-ex", sans-serif
+	font-weight: 100	
+	font-size: 14px
+
+body
+	font-size: 14px
+	color: white
+	min-width: 320px
+
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	
+
+	header
+
+		background: url('../img/header_bg.jpg') no-repeat top center fixed
+		background-size: cover
+		min-widht: 700px
+		height: 100vh
+
+	header, 
+	section
+		position: relative
+
+	
+.wrapper
+	width: 960px
+	margin: 0 auto
+	overflow: hidden
+	height: 100%
+	.head__topline
+		padding-top: 35px
+		.head__login 
+			float: right
+			.head__login-link
+				color: white
+				border: 2px solid transparent
+				&:hover
+					text-decoration: none
+				&:focus	
+				    outline: none
+				    text-decoration: none	
+			.head__login-btn
+				background-color: transparent
+				padding: 6px 15px
+				border: 2px solid transparent
+				&:hover
+					border: 2px solid white
+					border-radius: 22px
+				&:focus	
+				    outline: none	
+					
+							
+		.head__logo
+			float: left
+			.head__logo-link
+				text-transform: uppercase
+				font-size: 20px
+				font-weight: bold
+				color: white
+				&:hover
+					text-decoration: none
+						
+	.head__main
+		display: flex
+		height: 100%
+		position: relative
+		justify-content: center
+		align-items: center
+		width: auto
+
+		.head__main-content
+			width: 490px
+			min-width: 490px
+			text-align: center
+			
+			
+			.head__login-btn--find	
+				font-weight: bold
+				background-color: $red
+				border: 2px solid $red
+				border-radius: 100px
+				padding: 13px 23px
+				margin-top: 20px
+				outline: none
+				transition: background-color .1s ease
+				
+				
+				&:focus,
+				&:hover
+					text-decoration: none
+					color: #fff
+				&:hover
+					background-color: lighten($red, 5%)
+					&::after
+						opacity: .22
+				&:active
+					background-color: darken($red, 5%)
+					&::after
+						opacity: .32
+					
+.sliders
+	padding-top: 74px				
+	
+	.sliders__block 
+		overflow: visible 
+		width: 30%
+		position: relative
+		display: inline-block
+		
+		.owl-stage-outer
+			.owl-stage
+				transform: none
+				.owl-item
+
+		.sliders__outerblock
+			width: 100%
+			.sliders__innerblock 
+				box-sizing: border-box
+				position: absolute
+			    left: 0
+				width: 100%
+				
+				z-index: 1	
+				padding: 0 5%
+				bottom: 0px
+				background: linear-gradient(transparent, rgba(0,0,0,.6))
+				.sliders__innerblock-btn
+					background-color: $red
+					border: 2px solid $red
+					border-radius: 20px
+					padding: 2px 13px
+					transition: transform .3s
+					text-transform: uppercase
+					font-size: 10px
+					&:focus,
+					&:hover
+						text-decoration: none
+						color: #fff
+					&:hover
+						background-color: lighten($red, 5%)
+						&::after
+							opacity: .22
+					&:active
+						background-color: darken($red, 5%)
+						&::after
+							opacity: .32	
+					
+				.sliders__innerblock-title
+					margin: 20px 0 0 0
+					line-height: 1
+				.sliders__innerblock-subtitle
+					margin-top: 10px
+					line-height: 1
+	.sliders__content
+		display: flex
+		justify-content: space-around				
+.owl-theme
+	.owl-dots		
+		display: none
+	.owl-nav
+		margin-top: 0
+		width: 100%
+		position: absolute
+		top: 80px
+    	z-index: 1
+    	color: #ccc
+    	
+		.owl-prev,
+		.owl-next
+			background: none
+			color: #ccc
+			&:hover,
+			&:focus,
+			&:active
+
+				background-color: transparent
+	    		color: #999
+		.owl-prev
+			float: left
+		.owl-next
+			float: right
+.owl-carousel			
+	.owl-item
+		backface-visibility: inherit
+		min-height: 400px
+		img
+			min-height: inherit
+    		width: 100%
+
+		
+.fa-angle-right
+		&:before
+			height: 55px	 
+    
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.partners
+	padding-top: 74px
+	.partners__search
+		text-align: center
+		.partners__btn
+			font-weight: bold
+			background-color: $red
+			border: 2px solid $red
+			border-radius: 100px
+			padding: 13px 23px
+			margin-top: 20px
+			outline: none
+			transition: background-color .1s ease
+			&:focus,
+			&:hover
+				text-decoration: none
+				color: #fff
+			&:hover
+				background-color: lighten($red, 5%)
+				&::after
+					opacity: .22
+			&:active
+				background-color: darken($red, 5%)
+				&::after
+					opacity: .32	
+			    			
+.partners__content	
+	width: 100%
+	display: flex
+   	justify-content: space-arround
+	.partners__block
+		color: $black
+		text-align: center
+		margin: 0 10px	
+		.partners__block--interest
+			font-family: "roboto-ex", sans-serif
+			font-weight: 300
+			color: #666
+		.parnters__name	
+			margin: 12px 0 0 0
+
+.s-call
+	background: url('../img/contact.jpg') no-repeat top center 
+	background-size: cover
+	min-widht: 400px
+	height: 100vh
+	.s-call__block
+		background-color: rgba($red, .82)
+		position: absolute
+		right: 0
+		height: 100%
+		
+
+		.callback
+			padding: 25% 20%
+			position: relative 
+			text-align: center
+
+			input
+				background-color: transparent
+				border: rgba($black, .2) 1px solid
+				border-bottom: rgba($black, .2) 2px solid
+				border-radius: 2px
+				padding: 8px 22px
+				outline: none
+				display: inline-block
+				width: 100%
+				margin-top: 17px
+				&::-webkit-input-placeholder
+					color: #fff
+					opacity: 1
+				&::-ms-input-placeholder
+					color: #fff
+			.button	
+				color: $black
+				margin-top: 40px
+				font-weight: bold
+				background-color: white
+				border: 2px solid $red
+				border-radius: 100px
+				padding: 13px 103px
+				transition: transform .3s
+				margin-top: 20px
+				&:focus,
+				&:hover
+					border: 2px solid white
+					color: red
+				    outline: none	
+
+			.success
+				display: none
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				text-transform: uppercase
+				font-weight: bold
+				
+				z-index: 10
+				span
+					margin: auto
+				& ~ *
+					transition: all .5s ease
+				&.active
+					& ~ *
+						opacity: .5
+						filter: blur(20px)
+							
+			.call-back-logo
+				text-transform: uppercase
+				font-size: 20px
+				font-weight: bold
+				color: white
+				&:hover
+					text-decoration: none	
+			.formhead
+				font-size: 30px
+				text-transform: uppercase
+				font-weight: bold
+			h6
+				margin: 0		
+
+footer
+	border-top: 4px solid $red 
+	width: 100%
+	padding-top: 35px
+	padding-left: 1%
+	padding-right: 1%
+	color: $black
+	.flex
+		display: flex
+		justify-content: space-between
+		.footer__block
+			flex-grow: 1
+			.footer__title
+				margin: 5px 0 0 0
+			.footer__list
+				list-style: none
+				padding-left: 0
+				margin: 0
+				.footer__link
+					color: #666
+					font-family: "roboto-ex", sans-serif
+					font-weight: 300 
+					text-decoration: none
+					cursor: pointer
+					&:hover,
+					&:active
+						text-decoration: none
+					
+			.head__logo-link
+				text-transform: uppercase
+				font-size: 20px
+				font-weight: bold
+				color: $red
+				
+				&:hover
+					text-decoration: none
+		.footer__block--design
+		 	flex-grow: 3
+		 	text-align: end
+		 	.footer__design
+		 		font-size: 10px
+		 		font-weight: bold
+		 		color: #ccc
+		 		text-transform: uppercase
+			 	
+
+@import "media" 
