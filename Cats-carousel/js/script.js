@@ -1,5 +1,0 @@
-$(function() {
-
-	$('body').myCarousel();
-
-});
