@@ -1,0 +1,42 @@
+*{
+  padding:0;
+  margin: 0;
+}
+body{
+	 background-image:url(../img/img.jpg);
+	background-repeat:no-repeat;
+	display:cover;
+	background-size: 80%;
+	margin:auto;
+	
+
+}
+
+.container{
+  width: 600px;
+    background-color: #f9f6f2;
+    margin-top: 80px;
+    margin-right: 220px;
+    border: 6px solid #842727;
+    color: #471e03;
+    float: right;
+    border-radius:10px;
+}
+
+.answer{
+	display:block;
+	padding-left:30px;
+}
+.title{
+	text-align:center;
+	font-weight:bold;
+}
+.block{
+	margin:20px 0;
+}
+label{
+	display:block;
+}
+#checkbox{
+	margin-right: 5px;
+}

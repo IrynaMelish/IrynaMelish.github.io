@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+table{
+	border-collapse: collapse;
+	border-style: hidden;
+	width: 500px;
+	height: 540px;
+	 position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+	margin:auto;
+	}
+td,
+th{
+	border: 10px solid  black;
+}
+
+.yellow{
+	background-image: url(../images/yellow.png);
+}
+.red{
+	background-image: url(../images/red.png);
+}
+.blue{
+	background-image: url(../images/blue.png);
+}
+.black{
+	background-image: url(../images/black.png);
+}
+.white{
+	background: white;
+}
