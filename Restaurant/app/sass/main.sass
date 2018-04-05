@@ -1,0 +1,344 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+h2
+	font-size: 36px
+	font-family: "Yeseva One", cursive
+	color: white
+h3
+	font-size: 21px	
+	font-family: "Yeseva One", cursive
+	color: $accent	
+	border-bottom: 1px solid rgba(200, 159, 45, .23)
+	margin-top: 1rem
+h4
+	font-size: 21px		
+	font-family: $accent
+	margin-top: 1rem
+p
+	margin-top: 1rem	
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+	.site-header
+		min-height: 700px
+		height: 100vh
+		background-color: $dark
+		
+		
+section,
+header
+	background: no-repeat top center fixed
+	background-size: cover
+	width: 100%
+	
+		
+section
+	background-color: white
+	position: relative
+	background-size: cover
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+
+//-----------Section Home--------//	
+
+.logo 
+	line-height: 60px
+	position: fixed
+	justify-content: start
+	margin: 16px 0 16px 3rem
+	color: #fff
+	font-weight: bold
+	font-size: 20px
+	letter-spacing: 2px
+	
+ 
+nav
+	position: fixed
+	max-width: 100%
+	width: 100%
+	line-height: 60px
+	z-index: 20
+	transition: all .3s
+	font-family: "Yeseva One", cursive
+	font-size: 36px
+	border-bottom: 1px rgba(255,255,255,.1) solid
+	ul 
+		line-height: 60px
+		list-style: none
+		background: rgba(0, 0, 0, 0)
+		overflow: hidden
+		color: white
+		padding: 0
+		margin: 0
+		transition: 1s
+		
+		li 
+			display: inline-block
+			padding: 20px 0
+			border-top: 3px transparent solid
+			&:hover
+				color: white
+				border-top: 3px white solid	
+				text-shadow: 0 0 10px rgba(255, 255, 255, 0.6)
+					
+			a 
+				text-decoration: none
+				color: white
+				font-size: 16px
+				transition: all .3s
+				&:hover,
+				&:active
+					color: $accent
+
+.black
+	background-color: rgba(0,0,0,.72)
+.navbar
+	display: flex
+	justify-content: flex-end
+	margin-right: 3rem
+	padding: 0
+	.soc-link
+		padding: .8rem 0 .5rem 0
+		display: block
+	.nav-link
+		padding: .8rem .5rem .5rem	
+.menu-icon 
+	line-height: 60px
+	width: 100%
+	background: #000
+	box-sizing: border-box
+	padding: 40px
+	cursor: pointer
+	color: #fff
+	display: none
+.social-icons
+	margin-left: 1rem
+
+	
+.head__main
+	display: flex
+	height: 100%
+	position: relative
+	width: auto	
+	justify-content: center
+	align-items: center
+	.head__main-content
+		max-width: 980px
+		width: 100%
+		.head__main-title	
+			font-family: "Yeseva One", cursive
+			font-size: 90px
+			color: white
+			opacity: .8
+			animation-delay: .1s
+			padding-top: 100px
+			
+			
+			
+		.head__main--btn-book,
+		.head__main--btn-menu
+			font-family: $default-font
+			font-size: 18px
+			text-transform: uppercase
+			padding: 15px 50px
+			border: 1px #d3cfba solid
+			color: white
+			background-color: rgba(255,255,255,.3)
+			margin: 20px 15px
+			&:active,
+			&:focus
+				background-color: rgba(0,0,0,.7)
+				border: 1px $accent solid	
+				box-shadow: 0 0 0 0.2rem rgba(200,159,45,.3)		
+			
+	p
+		margin-bottom: 2rem
+		margin-top: 1.5rem	
+    		
+		
+//-------------Section About----------------
+.about
+	img
+		height: auto
+		max-width: 100%
+	.about-content__title	
+		color: $accent
+	.about-content,
+	.about-image,
+	.ingredients-content
+		position: relative
+		margin: auto
+		width: 100%
+	.text-center	
+		padding: 3rem 0	
+//-------------Section Ingredients----------------
+.ingredients
+	color: white
+	.ingredients-images
+		display: flex
+		justify-content: space-between	
+		overflow: hidden
+		
+		img
+			max-width: 100%
+			height: auto
+
+			
+.wrapper
+		background-color: rgba(0,0,0,.7)
+		max-width: 570px
+		max-height: 555px
+		margin: 5rem auto
+		overflow: hidden
+		padding: 3rem 1rem
+//-------------Section Menu----------------	
+.menu-content_Appetisers	
+	.menu-content__title
+		h2
+			color: $accent
+	h3
+		display: flex
+		justify-content: space-between
+.menu		
+	.container
+		padding: 5rem 1rem
+
+//-------------Section Reviews----------------	
+.reviews
+	color: white	
+	.row
+		justify-content: center
+		align-items: center
+		.wrapper
+			max-width: 770px
+//-------------Section Reservation----------------
+.reservation			
+	&-content__title
+		color: $accent
+	padding: 5% 0
+	&-form
+		padding: 0 5%
+	.reservation-dish
+		height: auto
+		width: 100%
+	.callback
+		display: block		
+	
+.success
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	text-transform: uppercase
+	font-weight: bold
+	z-index: 10
+	span
+		margin: auto
+	& ~ *
+		transition: all .5s ease
+	&.active
+		& ~ *
+			opacity: .5
+			filter: blur(20px)					
+label
+	color: $accent
+	font-family: "Yeseva One", cursive
+	font-size: 16px
+
+.form-group	
+	box-sizing: border-box
+	display: inline-block
+	width: 45%
+	input,
+	select
+		background-color: rgba(255,255,255,.3)
+		border: #c8c6c6	1px solid
+		padding: 5px 10px
+		box-sizing: border-box
+		outline: none
+		width: 100%
+		&:focus:required:invalid,
+		&:required:invalid
+			border-color: #c8c6c6
+		&:focus:required:valid,
+		&:required:valid	
+			border-color: $accent
+	select
+		padding: 10px 15px		
+.form-button	
+	font-size: 18px
+	background-color: $accent
+	color: white
+	border: 1px $accent solid
+	padding: 10px 30px
+	margin-top: 1rem
+	transition: transform .3s
+	&:active,
+	&:focus
+		box-shadow: 0 0 0 0.2rem rgba(200,159,45,.3)	
+		outline: none	
+			
+	
+//-------------Section Footer----------------
+footer	
+	background-color: #191919
+	color: white
+	h3
+		color: white
+		border-bottom: none	
+	.container
+		padding: 3rem		
+	
+	.social-icons,
+	.payments-cards
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		margin: 0
+		padding: 0
+		
+		li
+			list-style: none
+			padding: .5rem
+		a 
+			text-decoration: none
+			color: white
+			font-size: 16px
+			transition: all .3s
+			&:hover,
+			&:active
+				color: $accent
+		
+@import "media" // Always at the end
