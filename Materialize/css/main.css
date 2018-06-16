@@ -1,0 +1,24 @@
+.section-search .input-field input {
+    padding: 7px;
+    font-size: 18px;
+    width: 90%;
+    border: #f4f4f4 3px solid;
+}
+
+.section-follow .fa-2x {
+    margin: 5px 10px;
+}
+
+.shadow {
+    text-shadow: 4px 4px 9px #000000;
+}
+
+.section-icons .card-panel {
+    height: 350px;
+    overflow: hidden;
+}
+
+.section-popular .card {
+    height: 500px;
+    overflow: hidden;
+}
